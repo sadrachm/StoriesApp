@@ -94,21 +94,58 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
       <View testID="WelcomeScreen" style={FULL}>
         <GradientBackground colors={["#422443", "#281b34"]} />
         <Screen style={CONTAINER} preset="scroll" backgroundColor={color.transparent}>
-          <Header headerTx="welcomeScreen.poweredBy" style={HEADER} titleStyle={HEADER_TITLE} />
-          <Text style={TITLE_WRAPPER}>
-            <Text style={TITLE} text="Your new app, " />
-            <Text style={ALMOST} text="almost" />
-            <Text style={TITLE} text="!" />
-          </Text>
-          <Text style={TITLE} preset="header" tx="welcomeScreen.readyForLaunch" />
-          <Image source={bowserLogo} style={BOWSER} />
-          <Text style={CONTENT}>
-            This probably isn't what your app is going to look like. Unless your designer handed you
-            this screen and, in that case, congrats! You're ready to ship.
+          <Text style={TITLE} preset="header">
+            The Three Little Pigs
           </Text>
           <Text style={CONTENT}>
-            For everyone else, this is where you'll see a live preview of your fully functioning app
-            using Ignite.
+            Once upon a time there were three little pigs living with their mom. One day, her mom
+            told them it was time to make their own homes and live their own lives. So the three
+            little pigs go out and look for places to build their homes.
+          </Text>
+          <Text style={CONTENT}>
+            The youngest pig finds a place with lots of hay. So he grabs some hay and forms a house
+            out of them. He finishes quickly and rests inside his house as he drinks lemonade. The
+            other two pigs continue to look for suitable materials.
+          </Text>
+          <Text style={CONTENT}>
+            After some time the oldest pig finds some trees and lots of sticks on the floor. So he
+            decides to chop some trees down and pick up some sticks to build his home. He was able
+            to build his home in a few days. The youngest pig makes fun of him because of how long
+            he took to build a house. The oldest pig says "At least I am not take as long as our
+            brother!" They both laugh at the middle brother his just been collecting clay this
+            entire time.
+          </Text>
+          <Text style={CONTENT}>
+            The middle pig collects an enormous amount of clay. He then cooks his clay in ovens to
+            create bricks. He takes several weeks to create enough bricks to build his home. All
+            this time, the other pigs are making fun of him since they are playing games, having
+            fun, while the other pig is working. Eventually the pig finishes his home made out of
+            bricks. The pigs then have fun together.
+          </Text>
+          <Text style={CONTENT}>
+            One day, a big bad wolf comes to the youngest pig that made a house out of hay. The wolf
+            says, "Open the door!!!", the pig stays quiet.
+          </Text>
+          <Text style={CONTENT}>
+            "Then I will huff, and puff, and blow you away!", the house falls over and the pig runs
+            to his brother's house made of sticks. The wolf chases the pig and says the same thing,
+            "Open the door!!!", the pigs stay quiet.
+          </Text>
+          <Text style={CONTENT}>
+            "Then I will huff, and puff, and blow you away!", the wooden house also falls over and
+            the pigs run to their brother's brick house. The wolf angrily chases the pigs. They then
+            arrive at the brick house and the wolf repeats the same thing. "Open the door! NOW!" the
+            pigs stay quiet.
+          </Text>
+          <Text style={CONTENT}>
+            "Then I will huff, and puff, and blow you away!", the brick house stays firmly standing.
+            The wolf is confused since the house did not fall. The wolf tries again, "Then I will
+            huff, and puff, and blow you away!! Why is this not working???" After several more
+            attempts the wolf gives up and leaves the pigs alone.
+          </Text>
+          <Text style={CONTENT}>
+            The pigs then work together to build 2 more brick houses to make sure they are always
+            safe from the big bad wolf. After the work was done, they played, and had lots of fun.
           </Text>
         </Screen>
         <SafeAreaView style={FOOTER}>
