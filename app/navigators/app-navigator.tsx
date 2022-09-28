@@ -8,7 +8,7 @@ import React from "react"
 import { useColorScheme } from "react-native"
 import { NavigationContainer, DefaultTheme, DarkTheme } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { WelcomeScreen, DemoScreen, DemoListScreen } from "../screens"
+import { WelcomeScreen, DemoScreen, DemoListScreen, HomeScreen, Story1Screen, Story2Screen, Story3Screen, Story4Screen } from "../screens"
 import { navigationRef, useBackButtonHandler } from "./navigation-utilities"
 
 /**
@@ -27,6 +27,11 @@ export type NavigatorParamList = {
   welcome: undefined
   demo: undefined
   demoList: undefined
+  home: undefined
+  story1: undefined
+  story2: undefined
+  story3: undefined
+  story4: undefined
   // 🔥 Your screens go here
 }
 
@@ -39,12 +44,16 @@ const AppStack = () => {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName="welcome"
+      initialRouteName="home"
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
-      <Stack.Screen name="demoList" component={DemoListScreen} />
-      {/** 🔥 Your screens go here */}
+      {/* <Stack.Screen name="welcome" component={WelcomeScreen} /> */}
+      {/* <Stack.Screen name="demo" component={DemoScreen} /> */}
+      {/* <Stack.Screen name="demoList" component={DemoListScreen} /> */}
+      <Stack.Screen name="home" component={HomeScreen} />
+      <Stack.Screen name="story1" component={Story1Screen} />
+      <Stack.Screen name="story2" component={Story2Screen} />
+      <Stack.Screen name="story3" component={Story3Screen} />
+      <Stack.Screen name="story4" component={Story4Screen} />
     </Stack.Navigator>
   )
 }
@@ -76,5 +85,5 @@ AppNavigator.displayName = "AppNavigator"
  *
  * `canExit` is used in ./app/app.tsx in the `useBackButtonHandler` hook.
  */
-const exitRoutes = ["welcome"]
+const exitRoutes = ["home"]
 export const canExit = (routeName: string) => exitRoutes.includes(routeName)

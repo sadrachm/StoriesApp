@@ -23,14 +23,21 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
         "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
-      }
+      },
+      "package": "com.sadrachm.StoriesApp"
     },
     "ios": {
       "icon": "./assets/images/app-icon-ios.png",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sadrachm.StoriesApp"
     },
     "web": {
       "favicon": "./assets/images/app-icon-web-favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a02d5bff-3901-49b2-8795-0c4bc0488e5b"
+      }
     }
   }
 }
